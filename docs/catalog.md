@@ -27,5 +27,7 @@
 
 - [`nextjs`](../skills/nextjs/SKILL.md) — выберите его для Next.js. Для задач производительности React также можно подключить [Vercel React Best Practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices).
 - [`sveltekit`](../skills/sveltekit/SKILL.md) — выберите его для SvelteKit. При наличии нужного инструментария можно подключить [официальный `svelte-code-writer`](https://svelte.dev/docs/ai/overview).
+- [`go-backend`](../skills/go-backend/SKILL.md) — Go API, отмена запроса и жизненный цикл горутин.
+- [`postgresql`](../skills/postgresql/SKILL.md) — SQL, индексы, конкурентные транзакции и миграции с учётом версии сервера.
 
-Устанавливайте профиль той же командой, что и основной набор, передав `--skill nextjs` или `--skill sveltekit`. Если нужный профиль известен сразу, добавьте его в список скиллов при первом импорте.
+Устанавливайте профиль той же командой, что и основной набор, передав его имя после `--skill`. Например, для Go-приложения с транзакциями PostgreSQL используйте `--skill go-backend postgresql`.
