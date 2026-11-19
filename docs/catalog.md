@@ -6,6 +6,7 @@
 
 | Скиллы | Источник |
 | --- | --- |
+| `setup-agent-skills` | [Подбор и установка скиллов по контексту проекта](../skills/setup-agent-skills/SKILL.md). |
 | `deliver-feature`, `design-from-brief`, `build-from-design`, `design-system`, `product-ui` | Этот репозиторий. |
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/skills/ponytail), версия 5.3.3, коммит `96608e078b2d5ea607c5c3b8b5a54d1c1fba6846`. [Лицензия MIT](../skills/ponytail/LICENSE). Текст инструкций сохранён, из метаданных убрана подсказка аргументов для отдельных агентов. |
 
@@ -30,4 +31,12 @@
 - [`go-backend`](../skills/go-backend/SKILL.md) — Go API, отмена запроса и жизненный цикл горутин.
 - [`postgresql`](../skills/postgresql/SKILL.md) — SQL, индексы, конкурентные транзакции и миграции с учётом версии сервера.
 
-Устанавливайте профиль той же командой, что и основной набор, передав его имя после `--skill`. Например, для Go-приложения с транзакциями PostgreSQL используйте `--skill go-backend postgresql`.
+## Ручной выбор
+
+Чтобы самостоятельно установить конкретные профили, передайте их имена после `--skill`. Например, для Go-приложения с транзакциями PostgreSQL:
+
+```sh
+npx --yes skills@1.7.4 add Inforberi/agent-skills --skill go-backend postgresql
+```
+
+Вместо имени репозитория можно передать путь к локальному клону. Чтобы явно выбирать `deliver-feature` для многошаговой работы, добавьте [правило маршрутизации](../skills/deliver-feature/references/project-routing.md) в действующие инструкции проекта.
