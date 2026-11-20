@@ -21,7 +21,7 @@
 | `impeccable` | Визуальное направление, варианты до кода, полировка и аудит. | [pbakaus/impeccable](https://github.com/pbakaus/impeccable). |
 | `frontend-design` | Выбор композиции и визуального направления для нового экрана. | Используйте установленный скилл или [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design). |
 | `web-design-guidelines` | Целевое ревью доступности и реализации интерфейса. | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines). |
-| `playwright-cli` | Ручные браузерные сценарии и скриншоты, когда средств проекта недостаточно. | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli#installation). Скиллу требуется соответствующая CLI. |
+| `playwright-cli` | Интерактивные браузерные сценарии и скриншоты по разрешению пользователя, когда проверок проекта недостаточно. | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli#installation). Скиллу требуется соответствующая CLI. |
 | `figma-design-to-code` | Получение точного контекста и сопоставлений для реализации по Figma. | Используйте установленную интеграцию Figma и её штатный процесс. |
 
 ## Профили стека
@@ -30,6 +30,10 @@
 - [`sveltekit`](../skills/sveltekit/SKILL.md) — выберите его для SvelteKit. При наличии нужного инструментария можно подключить [официальный `svelte-code-writer`](https://svelte.dev/docs/ai/overview).
 - [`go-backend`](../skills/go-backend/SKILL.md) — Go API, отмена запроса и жизненный цикл горутин.
 - [`postgresql`](../skills/postgresql/SKILL.md) — SQL, индексы, конкурентные транзакции и миграции с учётом версии сервера.
+
+## Навигация по крупным проектам
+
+Graphify полезен, когда нужно выяснить, как связаны несколько модулей или сервисов. Его подключают отдельно к конкретному проекту. Для первого прогона можно построить локальный граф только по коду с `--code-only`. Используйте граф для поиска нужных файлов и сверяйте связи по исходникам. [Установка и команды Graphify](https://github.com/Graphify-Labs/graphify#install)
 
 ## Ручной выбор
 
