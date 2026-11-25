@@ -22,6 +22,7 @@
 | `frontend-design` | Выбор композиции и визуального направления для нового экрана. | Используйте установленный скилл или [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design). |
 | `web-design-guidelines` | Целевое ревью доступности и реализации интерфейса. | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines). |
 | `playwright-cli` | Интерактивные браузерные сценарии и скриншоты по разрешению пользователя, когда проверок проекта недостаточно. | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli#installation). Скиллу требуется соответствующая CLI. |
+| `openpencil-workflow` | Замеры кадра и сверка дизайна через локальный OpenPencil MCP. Подключайте для задач в OpenPencil. | [Профиль этого набора](../skills/openpencil-workflow/SKILL.md). Для справки по инструментам доступен [официальный скилл `open-pencil`](https://github.com/open-pencil/open-pencil/tree/master/skills/open-pencil). |
 | `figma-design-to-code` | Получение точного контекста и сопоставлений для реализации по Figma. | Используйте установленную интеграцию Figma и её штатный процесс. |
 
 ## Профили стека
